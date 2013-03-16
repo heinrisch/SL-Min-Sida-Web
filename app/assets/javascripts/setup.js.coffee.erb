@@ -1,0 +1,24 @@
+#= require jquery.min
+#= require jquery_ujs
+#= require underscore
+#= require hamlcoffee
+#= require backbone
+#= require_directory ./vendor
+#= require_self
+
+window.app = _.extend new Backbone.Marionette.Application(),
+  config: {}
+  cache: {}
+  helpers: {}
+  navigate: (args...) -> Backbone.history.navigate(args...)
+
+_.extend window,
+  Lib: {}
+  Model: {}
+  Collection: {}
+  Router: {}
+  Animation: {}
+  Mixin: {}
+  View:
+    Handheld: {}
+    Widget: {}
