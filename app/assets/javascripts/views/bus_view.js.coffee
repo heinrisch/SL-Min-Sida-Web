@@ -1,9 +1,6 @@
 class View.Bus extends Backbone.View
+  className: 'bus'
 
-  attributes:{
-    class:"fine"
-  }
- 
   initialize: =>
     console.log 'initlializing bus view'
    

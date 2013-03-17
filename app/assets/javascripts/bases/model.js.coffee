@@ -5,9 +5,7 @@ class Base.Model extends Backbone.Model
     deferred = $.Deferred()
     deferred.promise(this)
    
-    console.log 'binding' 
     @bind("change", =>
-      console.log 'fetched'
       @fetched = true
       deferred.resolve(this)
     )

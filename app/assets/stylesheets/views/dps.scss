@@ -1,0 +1,9 @@
+@import "compass/css3";
+
+div .dps {
+  display: inline-block;
+  margin: 10px 10px;
+  background: #7bcdff;
+  vertical-align: middle;
+  @include border-radius(3px);
+}
