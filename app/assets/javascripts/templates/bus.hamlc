@@ -1,4 +1,3 @@
-%div.container
-  %div.linenumber= @model.get('LineNumber')
-  %div.destination= @model.get('Destination')
-  %div.time= @model.get('DisplayTime')
+%div.linenumber= @model.get('LineNumber')
+%div.destination= @model.get('Destination')
+%div.time= @model.get('DisplayTime')

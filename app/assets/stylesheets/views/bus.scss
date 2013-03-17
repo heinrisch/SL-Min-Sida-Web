@@ -1,26 +1,26 @@
 .bus {
 
-  margin: 10px 10px;
-
   .linenumber {
+    width: 60px;
     font-size: 1.5em;
-    font-weight: bold; 
+    font-weight: bold;
+    text-align: right; 
     float: left;
   }
 
   .destination {
-    margin: 0 5px;
+    margin: 5px;
     float: left;
+    vertical-align: middle;
   }
 
   .time {
     font-weight: bold;
-    margin-left: 5px;
+    margin: 5px;
     float: right;
   }
 
-  .container {
-    vertical-align: middle;
-    clear: both;
-  }
+  color: #6e6e6e;
+  vertical-align: middle;
+  clear: both;
 }
