@@ -5,4 +5,5 @@ class Router.MainRouter extends Backbone.Router
 
   main: =>
     console.log 'hej'
-    $('#app').html('hej')  
+    views = new View.MainView()
+    $('#app').html(views.render().el)  
