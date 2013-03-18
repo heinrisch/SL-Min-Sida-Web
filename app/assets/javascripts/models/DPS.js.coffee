@@ -4,7 +4,7 @@ class Model.DPS extends Base.Model
     @siteId = options.siteId
 
   url: =>
-    'http://slwrapper.appspot.com/test?siteId=' + @siteId + '&timeWindow=10'
+    'https://slwrapper.herokuapp.com/test?siteId=' + @siteId + '&timeWindow=10'
 
 
   parse: (o) =>
