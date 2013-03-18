@@ -1,5 +1,7 @@
 class View.MainView extends Backbone.View
   className: 'main'
+
+  id: 'main'
  
   dpsViews: []
 
@@ -13,5 +15,9 @@ class View.MainView extends Backbone.View
   render: =>
     @$el.html('')
     for view in @dpsViews
-      @$el.append(view.render().el) 
+      @$el.append(view.render().el)
+
+    if not @inputbar
+      @inputbar = new View.InputBar() 
+      $('body').append(@inputbar.render().el) 
     @

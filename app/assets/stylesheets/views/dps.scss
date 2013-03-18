@@ -9,8 +9,13 @@
   @include border-radius(2px);
   @include box-shadow(#d1d1d1 0 2px 0px 0px);
 
+  @include transform(scale(0,0));
   @include transition-property(transform);
-  @include transition-duration(0.3s);
+  @include transition-duration(0.5s);
+}
+
+.fetched {  
+  @include transform(scale(1,1));
 }
 
 .dps:hover {

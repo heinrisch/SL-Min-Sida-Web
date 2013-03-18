@@ -1,9 +1,16 @@
 @import "views/**/*";
 
+@include sticky-footer(50px, "#app", "#footer", "#inputbar");
+
 html, body {
   font-family: Verdana, Geneva, sans-serif;
   background-color: #e5e4e4;
+  width: 100%;
+  height: 100%;
 }
 
-
+#app {
+  width: 100%;
+  height: 100%;
+}
 

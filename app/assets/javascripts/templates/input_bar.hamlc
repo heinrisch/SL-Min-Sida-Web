@@ -1,0 +1,2 @@
+%input#search{:type => "text", :placeholder => 'station'}
+%input#send{:type => "submit", :value => "Search", :class => "button"}

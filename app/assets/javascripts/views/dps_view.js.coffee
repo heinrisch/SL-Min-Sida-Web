@@ -10,6 +10,7 @@ class View.DPS extends Backbone.View
         view = new View.Bus({model: b})
         @$el.append(view.render().el)
       )
+      @$el.addClass('fetched')
     )
   
    
