@@ -16,12 +16,15 @@
 }
 
 li.site{
+  color: #6e6e6e;
+  font-weight: bold;
   text-align: center;
-  border:1px solid #dcdcdc;
+  border:1px solid #6e6e6e;
   width: auto;
   padding: 5px 5px;
   margin: 5px 5px;
   list-style-type: none;
+  @include border-radius(2px);
 }
 
 
