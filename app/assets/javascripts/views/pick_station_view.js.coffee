@@ -6,11 +6,14 @@ class View.PickStation extends Backbone.View
     @model.fetch() unless @model.fetched
     
     $.when(@model).then(=>
-      for site in @model.sites()
-        view = new View.Site({name: site.Name, id: site.Number})
-        @$el.append(view.render().el)
-        view.on('onClick', (options) => @onClick(options.id)) 
+      for site in [].concat(@model.sites())
+        @addSite(site)
     )
+
+  addSite: (site) =>
+    view = new View.Site({name: site.Name, id: site.Number})
+    @$el.append(view.render().el)
+    view.on('onClick', (options) => @onClick(options.id)) 
   
   onClick: (id) =>
     @trigger('add', {id: id})
