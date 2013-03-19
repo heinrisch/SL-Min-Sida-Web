@@ -1,0 +1,27 @@
+@import "compass/css3";
+
+.pickstation {
+  position: absolute;
+  padding: 15px 15px;
+  left: 50%;
+  top: 15px;
+  margin-left: -25%;
+  width: 50%;
+  height: 70%;
+  overflow: auto;
+  background: #ffffff;
+  vertical-align: top;
+  @include border-radius(2px);
+  @include box-shadow(#d1d1d1 0 2px 0px 0px);
+}
+
+li.site{
+  text-align: center;
+  border:1px solid #dcdcdc;
+  width: auto;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  list-style-type: none;
+}
+
+
