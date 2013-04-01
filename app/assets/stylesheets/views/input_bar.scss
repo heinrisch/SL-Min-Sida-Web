@@ -10,7 +10,6 @@
     width: 200px;
     font-size: 20px;
     outline: none;
-    @include border-radius(3px);
   }
 
   #send {
@@ -23,6 +22,5 @@
     font-size: 20px;
     outline: none;
     padding: 3px;
-    @include border-radius(3px);
   }
 }

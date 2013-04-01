@@ -1,3 +1,0 @@
-%div.linenumber= @model.get('LineNumber')
-%div.destination= @model.get('Destination')
-%div.time= @model.get('DisplayTime')

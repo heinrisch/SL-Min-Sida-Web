@@ -1,0 +1,5 @@
+%div.title= @model.get('Title')
+%div.description= 
+	!=@model.get('Description')
+
+%img.image{:src => @model.get('ParsedImage')}

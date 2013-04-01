@@ -3,23 +3,22 @@ class View.MainView extends Backbone.View
 
   id: 'main'
  
-  dpsViews: []
+  views: []
 
-  initialize: (options) =>
-    for view in @dpsViews
+  initialize: =>
+    for view in @views
       view.remove()
 
-    @dpsViews = []
+    @views = []
 
-    for station in options.stations
-      @dpsViews.push new View.DPS({model: new Model.DPS({siteId: station})})
+    @views.push new View.News({collection: new Collection.News()})
 
     @render()
 
    
   render: =>
     @$el.html('')
-    for view in @dpsViews
+    for view in @views
       @$el.append(view.render().el)
 
     if not @inputbar

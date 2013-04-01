@@ -7,8 +7,9 @@ html, body, li {
 }
 
 #app {
+	overflow: scroll;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #e5e4e4;
 }
 

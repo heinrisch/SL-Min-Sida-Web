@@ -5,13 +5,5 @@ class Router.MainRouter extends Backbone.Router
   }
 
   main: =>
-    view = new View.MainView({
-      stations: ['1508'] 
-    })
-    $('#app').html(view.render().el)  
-
-  parse: (params) =>
-    view = new View.MainView({
-      stations: params.split('+') 
-    })
-    $('#app').html(view.render().el)  
+    view = new View.MainView()
+    $('#app').html(view.render().el)
