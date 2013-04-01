@@ -7,7 +7,7 @@ class View.News extends Backbone.View
 
   initialize: (news) =>
     console.log 'News view for '
-    @collection.fetch() 
+    @collection.fetch()
     
     $.when(@collection).then(=>
       @collection.each((newsItem) =>
@@ -20,6 +20,7 @@ class View.News extends Backbone.View
     )
   
   reorder: =>
+    @render()
     $('#newsContainer').masonry({
       columnWidth: 350
       itemSelector: '.newsItem'
@@ -29,9 +30,33 @@ class View.News extends Backbone.View
   render: =>
     console.log 'render'
     @$el.html('')
-    if @views
+    if @views.length > 0
       for v in @views
         console.log v.height
         @$el.append(v.el)
+    else
+      @addSpinner()
     @
 
+  addSpinner: =>
+    console.log 'should add spinner'
+    opts = {
+      lines: 17
+      length: 13
+      width: 6
+      radius: 30
+      corners: 0 
+      rotate: 0 
+      color: '#000' 
+      speed: 1 
+      trail: 60 
+      shadow: true 
+      hwaccel: false 
+      className: 'spinner' 
+      zIndex: 2e9 
+    }
+    spinner = new Spinner(opts).spin();
+    $(spinner.el).css("position", "absolute")
+    $(spinner.el).css("left", "50%")
+    $(spinner.el).css("top", "50%")
+    @$el.append(spinner.el)

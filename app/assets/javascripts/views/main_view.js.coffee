@@ -17,6 +17,7 @@ class View.MainView extends Backbone.View
 
    
   render: =>
+    console.log 'rendering main'
     @$el.html('')
     for view in @views
       @$el.append(view.render().el)

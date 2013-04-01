@@ -1,7 +1,7 @@
 @import "compass/css3";
 
 .newsItem {
-  overflow: scroll;
+  overflow: auto;
   display: inline-block;  
   max-width: 300px;
   padding: 5px 5px;
