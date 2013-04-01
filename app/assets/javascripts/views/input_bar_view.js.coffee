@@ -6,6 +6,7 @@ class View.InputBar extends Backbone.View
   events:
     'click #send' : 'search'
     'keyup #search' : 'searchKeyUp'
+    'click #layout' : 'layout'
 
   initialize: =>
     console.log 'initlializing input bar view'
@@ -22,6 +23,8 @@ class View.InputBar extends Backbone.View
     searchField.val('')
      
     
+  layout: =>
+    @trigger('layout')
 
   searchKeyUp: (e) =>
     console.log 'keyup'

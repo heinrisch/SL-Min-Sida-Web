@@ -13,3 +13,15 @@ html, body, li {
   background-color: #e5e4e4;
 }
 
+a {
+	color: #636363;
+}
+
+a:link {
+	text-decoration:none;
+}
+a:visited {
+	text-decoration:none;
+}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}

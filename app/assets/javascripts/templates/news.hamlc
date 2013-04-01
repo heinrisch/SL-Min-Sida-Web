@@ -1,4 +1,6 @@
-%div.title= @model.get('Title')
+%div.title
+	%a.link{:href => @model.get('Link'), :target => '_blank'} 
+		=@model.get('Title')
 %div.description= 
 	!=@model.get('Description')
 

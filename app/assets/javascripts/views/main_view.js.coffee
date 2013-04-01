@@ -24,6 +24,11 @@ class View.MainView extends Backbone.View
     if not @inputbar
       @inputbar = new View.InputBar() 
       $('body').append(@inputbar.render().el)
+      @inputbar.on('layout', => 
+        console.log 'trying to reorder!'
+        for v in @views
+          v.reorder()
+      )
       @inputbar.on('search', (o) =>
         @onSearch(o.searchTerm)
       ) 
