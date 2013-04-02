@@ -20,12 +20,15 @@ class View.News extends Backbone.View
     )
   
   reorder: =>
-    @render()
+    width = 350
+    #if mobilecheck()
+      #$('#app').css('width', width);
     $('#newsContainer').masonry({
-      columnWidth: 350
+      columnWidth: width
       itemSelector: '.newsItem'
       isAnimated: true
     });
+    @render()
 
   render: =>
     console.log 'render'
