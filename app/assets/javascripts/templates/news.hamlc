@@ -5,3 +5,5 @@
 	!=@model.get('Description')
 
 %img.image{:src => @model.get('ParsedImage')}
+
+%div.source=@model.get('Source')
