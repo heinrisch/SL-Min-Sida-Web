@@ -35,8 +35,7 @@ class View.News extends Backbone.View
     @$el.html('')
     if @views.length > 0
       for v in @views
-        console.log v.height
-        @$el.append(v.el)
+        @$el.append(v.render().el)
     else
       @addSpinner()
     @
