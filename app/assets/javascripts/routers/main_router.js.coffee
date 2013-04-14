@@ -1,9 +1,9 @@
 class Router.MainRouter extends Backbone.Router
   routes:{
     '' : 'main'
-    ':params' : 'parse'
+    ':params' : 'main'
   }
 
-  main: =>
-    view = new View.MainView()
-    $('#app').html(view.render().el)
+  main: (params) =>
+  	view = new View.MainView({'parameters' : params})
+  	$('#app').html(view.render().el)

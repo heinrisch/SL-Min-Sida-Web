@@ -1,1 +1,11 @@
-%input#layout{:type => "submit", :value => "Layout", :class => "button"}
+%a{:href => '#aftonbladet+dn+svd+reddit+cnn+di+svt+yahoo+bbc+reuters'}
+	All
+%a{:href => '#aftonbladet+dn+svd+di+svt'}
+	Svenska
+%a{:href => '#cnn+yahoo+bbc+reuters'}
+	English
+%a{:href => '#reddit'}
+	gifs
+%span.layout
+	layout
+

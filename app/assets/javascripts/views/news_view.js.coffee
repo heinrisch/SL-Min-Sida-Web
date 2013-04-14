@@ -6,6 +6,10 @@ class View.News extends Backbone.View
   id: 'newsContainer'
 
   initialize: (news) =>
+    for v in @views
+      v.remove()
+    @views = []
+
     console.log 'News view for '
     @collection.fetch()
     

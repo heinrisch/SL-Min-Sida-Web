@@ -1,26 +1,10 @@
-@import "compass/reset.scss";
-@import "compass/layout.scss";
-
 .inputbar {
-  float: right;
+  overflow: auto;
+  width: auto;
+  height: 20px;
   padding: 0 15px;
 
-  #search {
-    padding: 3px;
-    width: 200px;
-    font-size: 20px;
-    outline: none;
-  }
-
-  #send, #layout {
-    background-color:#ededed;
-    border:1px solid #dcdcdc;
-    display:inline-block;
-    color:#777777;
-    font-weight:bold;
-    text-decoration:none;
-    font-size: 20px;
-    outline: none;
-    padding: 3px;
+  .layout {
+    float: right;
   }
 }
