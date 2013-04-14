@@ -4,6 +4,8 @@
 %div.description= 
 	!=@model.get('Description')
 
-%img.image{:src => @model.get('ParsedImage')}
+
+- if @model.get('ParsedImage') != ""
+	%img.image{:src => @model.get('ParsedImage')}
 
 %div.source=@model.get('Source')
