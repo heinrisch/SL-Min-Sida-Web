@@ -24,15 +24,19 @@ class View.News extends Backbone.View
     )
   
   reorder: =>
-    width = 350
     #if mobilecheck()
       #$('#app').css('width', width);
-    $('#newsContainer').masonry({
-      columnWidth: width
-      itemSelector: '.newsItem'
-      isAnimated: true
-    });
+    #$('#newsContainer').masonry({
+    #  columnWidth: width
+    #  itemSelector: '.newsItem'
+    #  isAnimated: true
+    #});
     @render()
+    width = Math.max($('#newsContainer').width()/4 - 4*5, 300)
+    $('.newsItem').css('width', width)
+    $('#newsContainer').freetile({
+      animate: true
+      });
 
   render: =>
     console.log 'render'

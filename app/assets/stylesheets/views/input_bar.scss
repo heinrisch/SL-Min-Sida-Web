@@ -1,8 +1,13 @@
+@import "compass/css3";
+@import "compass/utilities";
+
 .inputbar {
   overflow: auto;
   width: auto;
   height: 20px;
-  padding: 0 15px;
+  padding: 3px;
+  top: 0;
+  background: #ffffff;
 
   .layout {
     float: right;
