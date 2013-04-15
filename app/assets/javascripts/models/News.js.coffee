@@ -8,6 +8,7 @@ class Collection.News extends Base.Collection
  		time = '?time=24'
  		if @params
  			time = '?time=6' if @params.split('+').length > 3
+ 			time = '?time=3' if @params.split('+').length > 6
  			base += time
  			base += '&requests=' + @params if @params
  		else
