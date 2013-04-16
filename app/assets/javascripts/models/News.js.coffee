@@ -5,8 +5,9 @@ class Collection.News extends Base.Collection
 
  	url: =>
  		base = "http://blooming-inlet-2976.herokuapp.com/rss"
- 		time = '?time=24'
+ 		time = '?time=1'
  		if @params
+ 			time = '?time=24'
  			time = '?time=6' if @params.split('+').length > 3
  			time = '?time=1' if @params.split('+').length > 6
  			base += time
