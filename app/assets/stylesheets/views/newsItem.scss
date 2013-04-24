@@ -3,9 +3,9 @@
 .newsItem {
   overflow: auto;
   display: inline-block;
-  width: 300px;
   padding: 5px 5px;
   margin: 5px 5px;
+  max-width: 500px;
   background: #ffffff;
   border-width: 1px;
   border-color: #dcdfe4;
