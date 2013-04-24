@@ -8,8 +8,20 @@
   padding: 3px;
   top: 0;
   background: #ffffff;
+  border-width: 1px;
+  border-color: #dcdfe4;
+  border-style: solid;
+  @include border-radius(1px);
+  @include box-shadow(#e3e5eb 0 0 4px 1px);
 
   .layout {
     float: right;
+  }
+
+  a {
+    font-size: 15px;
+    color: #575757;
+    font-weight: bold;
+    padding: 2px;
   }
 }

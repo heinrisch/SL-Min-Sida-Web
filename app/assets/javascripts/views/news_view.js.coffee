@@ -34,7 +34,7 @@ class View.News extends Backbone.View
     @render()
     width = $('#newsContainer').width()/4 - 5*5
     if width < 300
-      width = $('#newsContainer').width() - 5*2
+      width = $('#newsContainer').width() - 5*3
     $('.newsItem').css('width', width)
     $('#newsContainer').freetile();
 
