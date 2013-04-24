@@ -32,15 +32,14 @@ class View.News extends Backbone.View
     #  isAnimated: true
     #});
     @render()
-    for i in [10..2]
-      console.log 'testing ' + i
-      width = $('#newsContainer').width()/i - 30
-      console.log 'width: ' + width
-      if width > 300
-        break
-    if width < 300
-      width = $('#newsContainer').width() - 30
-    $('.newsItem').css('width', width)
+    minWidth = 300
+    columns = Math.floor($('#newsContainer').width()/minWidth)
+    width = 0
+    if columns < 1
+      width = $('#newsContainer').width()
+    else
+      width = Math.floor($('#newsContainer').width()/columns)
+    $('.newsItem').css('width', width-25)
     $('#newsContainer').freetile();
 
   render: =>
