@@ -22,6 +22,8 @@ class View.News extends Backbone.View
       @$el.addClass('fetched')
       setTimeout(@reorder, 1000)
     )
+
+    $(window).resize @reorder
   
   reorder: =>
     #if mobilecheck()
