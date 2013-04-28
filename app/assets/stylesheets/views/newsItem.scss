@@ -30,7 +30,8 @@
   .source {
     font-size: 7px;
     padding: 2px;
-    text-align: right;
+    text-align: left;
+    float: left;  
   }
 
   .image {
@@ -38,5 +39,24 @@
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .twitter {
+    font-size: 11px;
+    padding: 2px;
+    color: #00bffa;
+    float: right;
+  }
+
+  .facebook {
+    font-size: 11px;
+    color: #4860a6;
+    padding: 2px;
+    float: right;
+  }
+
+  .icon {
+    width: 11px;
+    height: 11px;
   }
 }

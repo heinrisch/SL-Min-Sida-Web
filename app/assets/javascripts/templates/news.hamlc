@@ -8,4 +8,14 @@
 - if @model.get('ParsedImage') != ""
 	%img.image{:src => @model.get('ParsedImage')}
 
+- if @model.get('TwitterStats').Count > 0
+	%div.twitter
+		%img.icon{:src => "/assets/twitter.png"}
+		=@model.get('TwitterStats').Count 
+
+- if @model.get('FacebookStats').Total > 0
+	%div.facebook
+		%img.icon{:src => "/assets/facebook.png"}
+		=@model.get('FacebookStats').Total
+
 %div.source=@model.get('Source')
