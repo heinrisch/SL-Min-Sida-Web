@@ -1,6 +1,6 @@
-%a{:href => '#aftonbladet+dn+svd+reddit+cnn+di+svt+yahoo+bbc+reuters'}
+%a{:href => '#aftonbladet+dn+svd+reddit+cnn+di+svt+yahoo+bbc+reuters+expressen'}
 	All
-%a{:href => '#aftonbladet+dn+svd+di+svt'}
+%a{:href => '#aftonbladet+dn+svd+di+svt+expressen'}
 	Svenska
 %a{:href => '#cnn+yahoo+bbc+reuters+nytimes+npr'}
 	English
