@@ -1,3 +1,5 @@
+%a{:href => '#trending'}
+	Trending
 %a{:href => '#aftonbladet+dn+svd+reddit+cnn+di+svt+yahoo+bbc+reuters+expressen'}
 	All
 %a{:href => '#aftonbladet+dn+svd+di+svt+expressen'}
