@@ -13,9 +13,9 @@
 		%img.icon{:src => "/assets/twitter.png"}
 		=@model.get('TwitterStats').Count 
 
-- if @model.get('FacebookStats').Total > 0
+- if @model.get('FacebookStats').Shares > 0
 	%div.facebook
 		%img.icon{:src => "/assets/facebook.png"}
-		=@model.get('FacebookStats').Total
+		=@model.get('FacebookStats').Shares
 
 %div.source=@model.get('Source')
