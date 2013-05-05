@@ -7,7 +7,7 @@ class Collection.News extends Base.Collection
  		base = "http://012.se/rss"
  		time = '?time=1'
 
- 		if @params and @params = 'trending'
+ 		if @params and @params == 'trending'
  			return base + '?time=24' + '&trending=1'
 
  		if @params
