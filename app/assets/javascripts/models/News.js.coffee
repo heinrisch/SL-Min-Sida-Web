@@ -4,7 +4,7 @@ class Collection.News extends Base.Collection
  	model: Model.NewsItem
 
  	url: =>
- 		base = "http://blooming-inlet-2976.herokuapp.com/rss"
+ 		base = "http://012.se/rss"
  		time = '?time=1'
  		if @params
  			time = '?time=24'
