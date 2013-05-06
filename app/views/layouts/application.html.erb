@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=350, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <%= analytics_init if Rails.env.production? %>
   <title>News on Rails</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>

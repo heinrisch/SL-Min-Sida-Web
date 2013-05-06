@@ -49,6 +49,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fssm (0.2.10)
+    google-analytics-rails (0.0.4)
     haml (4.0.1)
       tilt
     haml_coffee_assets (1.11.1)
@@ -128,6 +129,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails
   execjs
+  google-analytics-rails
   haml
   haml_coffee_assets
   jquery-rails

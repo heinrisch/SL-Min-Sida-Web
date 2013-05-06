@@ -24,6 +24,7 @@ gem 'execjs'
 gem 'rails-backbone'
 gem 'compass-rails'
 gem 'haml'
+gem 'google-analytics-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
