@@ -34,7 +34,7 @@ class View.News extends Backbone.View
     #  isAnimated: true
     #});
     @render()
-    minWidth = 400
+    minWidth = 350
     columns = Math.floor($('#newsContainer').width()/minWidth)
     width = 0
     if columns < 1
